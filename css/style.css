@@ -1,0 +1,26 @@
+@import url('global.css');
+@import url('vars.css');
+
+.header {
+  margin-top: 25px;
+}
+
+.header__inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  border-radius: 50px;
+  border: 2px solid var(--orangeDark-color);
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+}
+
+.header__list-item+.header__list-item {
+  /* display: flex; */
+  padding-left: 25px;
+}
