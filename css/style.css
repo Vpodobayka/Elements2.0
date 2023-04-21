@@ -21,6 +21,5 @@
 }
 
 .header__list-item+.header__list-item {
-  /* display: flex; */
   padding-left: 25px;
 }
