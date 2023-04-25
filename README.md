@@ -6,6 +6,6 @@ I am currently looking for a js montor, my English is not great but I'm more tha
 
 - [X] Add a little more info in the README
 - [ ] Pick a Licence
-- [ ] Update the README
+- [X] Update the README
 - [X] Accept a pull request
 - [ ] Write lots of code!!
