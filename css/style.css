@@ -1,13 +1,13 @@
-@import url('global.css');
-@import url('vars.css');
+@import url("global.css");
+@import url("vars.css");
 
 .header {
   margin-top: 25px;
 }
 
 .header__inner {
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header__nav {
@@ -20,6 +20,10 @@
   justify-content: center;
 }
 
-.header__list-item+.header__list-item {
-  padding-left: 25px;
+.header__list-item + .header__list-item {
+  padding-left: 20px;
+}
+
+.header__list-link:hover {
+  text-decoration: underline;
 }
