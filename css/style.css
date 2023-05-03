@@ -1,3 +1,4 @@
+@import url("media.css");
 @import url("global.css");
 @import url("vars.css");
 
@@ -10,20 +11,34 @@
   justify-content: center;
 }
 
-.header__nav {
-  border-radius: 50px;
-  border: 2px solid var(--orangeDark-color);
-  padding: 0 25px;
-}
-
-.header__list {
+.menu__list {
   display: flex;
   justify-content: center;
   gap: 20px;
+  border-radius: 50px;
+  border: 2px solid var(--orangeDark-color);
+  padding: 15px 30px;
 }
 
-.header__list-link:hover {
+.menu__list-link:hover {
   text-decoration: underline;
+}
+
+.menu__btn {
+  width: 40px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu__btn span {
+  height: 2px;
+  background-color: var(--green-light);
+  width: 100%;
 }
 
 .sun {
@@ -34,7 +49,7 @@
   font-size: 28px;
   line-height: 30px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .sun__list {
@@ -42,6 +57,13 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 35px;
   text-align: center;
+  /* list-style: none; */
+}
+
+.sun__item {
+  padding: 25px;
+  border: 2px solid var(--green-light);
+  border-radius: 20px;
 }
 
 .sun__item-img {
@@ -57,4 +79,80 @@
 
 .sun__item-text {
   text-align: left;
+}
+
+/* .may__box {
+}
+.may {
+}
+.may__title {
+}
+.may__img {
+}
+.may__text {
+}
+.may__link {
+} */
+
+.flipCard {
+  width: 300px;
+  height: 398px;
+  background: transparent;
+  perspective: 1000px;
+  margin: 35px 0;
+}
+
+.flipCard__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flipCard:hover .flipCard__inner {
+  transform: rotateY(180deg);
+}
+
+.flipCard__back,
+.flipCard__front {
+  border-radius: 25px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flipCard__front {
+  background-color: var(--light-color);
+  color: black;
+  padding: 25px;
+}
+
+.flipCard__front-title {
+  margin-bottom: 25px;
+}
+
+.flipCard__front-text {
+  margin-bottom: 25px;
+}
+
+.flipCard__front-image {
+  margin: 0 auto;
+  border-radius: 50%;
+  padding-bottom: 25px;
+}
+
+.flipCard__back {
+  color: white;
+  transform: rotateY(180deg);
+  padding: 25px;
+  background-color: var(--green-dark);
+}
+
+.flipCard__back-button {
+  display: inline-block;
+  transform: rotate(180deg);
 }

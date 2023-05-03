@@ -1070,4 +1070,526 @@
 
 //* Функция confirm
 
+// let ok = confirm('you norm ?');
+// if (ok) {
+//   console.log('yes');
+// } else {
+//   console.log('no');
+// }
 
+// let user = confirm('you 18 ear ?');
+// if (user) {
+//   console.log('18');
+// } else {
+//   console.log('not 18');
+// }
+
+
+//* Область видимости переменных в if-else
+
+// if (true) {
+//   let res = '!';
+// }
+// console.log(res);
+
+
+
+// let res;
+// if (true) {
+//   res = '!';
+// }
+// console.log(res);
+
+
+
+// let age = 17;
+// let adult;
+
+// if (age >= 18) {
+//   adult = true;
+// } else {
+//   adult = false; // work
+// }
+// console.log(adult);
+
+
+
+//* Нюансы области видимости переменных в конструкциях if-else
+
+
+// let res = 1;
+
+// if (true) {
+//   let res = 2;
+//   console.log(res); // выведет 2
+// }
+
+// console.log(res); // выведет 1
+
+
+
+// let age = 22;
+// let res;
+
+// if (age >= 18) {
+//   if (age <= 23) {
+//     res = 'от 18 до 23';
+//   } else {
+//     res = 'больше 23';
+//   }
+// } else {
+//   res = 'меньше 18';
+// }
+
+// console.log(res)
+
+
+
+
+// let age = 24;
+// let res;
+
+// if (age >= 18) {
+
+//   if (age <= 23) {
+//     res = 'от 18 до 23';
+//   } else {
+//     res = 'больше 23';
+//   }
+// } else {
+//   res = 'меньше 18';
+// }
+
+// console.log(res);
+
+
+
+//* Проверка частей часа через if-else
+
+//в какую четверть часа попадает указанное количество минут:
+// let min = 10;
+
+// if (min >= 0 && min <= 14) {
+//   console.log('1 четверть');
+// }
+// if (min >= 15 && min <= 29) {
+//   console.log('2 четверть');
+// }
+// if (min >= 30 && min <= 44) {
+//   console.log('3 четверть');
+// }
+// if (min >= 45 && min <= 59) {
+//   console.log('4 четверть');
+// }
+
+
+
+//	в какую треть часа попадает указанное количество минут.
+// let min = 38;
+
+// if (min >= 0 && min <= 19) {
+//   console.log('1я треть');
+// }
+// if (min >= 20 && min <= 39) {
+//   console.log('2я треть');
+// }
+// if (min >= 40 && min <= 60) {
+//   console.log('3я треть');
+// }
+
+
+
+
+//* Проверка длины строк и массивов
+
+// let str = '12345';
+
+// if (str.length >= 3) {
+//   console.log('!');
+// }
+
+
+
+
+// let arr = [1, 2, 3];
+// if (arr.length > 3) {
+//   console.log('> 3 elements');
+// }
+// else if (arr.length = 3) {
+//   let arrSum = String(arr)
+//   let arrRes = (Number(arr[0]) + Number(arr[1]) + Number(arr[2]));
+//   console.log(arrRes);
+// }
+
+
+
+
+//* Проверка символов строки
+
+
+// let str = '12345';
+// let last = str[str.length - 1];
+
+// if (last == 5) {
+//   console.log('!');
+// }
+
+
+
+// let str = "abc"
+// if (str[0] == 'a') {
+//   console.log('a');
+// }
+
+
+
+// let str = 'azx';
+// if (str[str.length - 1]) {
+//   console.log('x');
+// }
+
+
+
+// let str = 'bac';
+// if (str[0] == 'a') {
+//   console.log('a');
+// } else if (str[0] == 'b') {
+//   console.log('b');
+// }
+
+
+//* Проверка цифр числа
+
+// let num = 12345;
+
+// if (num[0] == 1) {
+//   console.log('+++');
+// } else {
+//   console.log('---'); // сработает это
+// }
+
+
+
+// Как вы уже должны знать, проблема в том, что можно обращаться к символам строки, но нельзя - к цифрам числа:
+// Для решения проблемы преобразуем наше число в строку:
+
+// let num = 12345;
+// let str = String(num);
+
+// if (str[0] == 1) {
+//   console.log('+++'); // сработает это
+// } else {
+//   console.log('---');
+// }
+
+
+
+// Пусть теперь мы хотим проверить первую цифру на то, что она равна 1, либо 2. Напишем соответствующий код:
+// let num = 12345;
+
+// if (String(num)[0] == 1 || String(num)[0] == 2) {
+// 	console.log('+++');
+// } else {
+// 	console.log('---');
+// }
+
+// или
+
+// let num = 12345;
+// let first = String(num)[0];
+
+// if (first == 1 || first == 2) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = 220;
+// let lastNum = String(num);
+// if (lastNum[lastNum.length - 1] == 0) {
+//   console.log('last 0');
+// }
+
+
+
+// let num = 12345678;
+// let numStr = String(num);
+// if (
+//   numStr[numStr.length - 1] == 1 ||
+//   numStr[numStr.length - 1] == 3 ||
+//   numStr[numStr.length - 1] == 5 ||
+//   numStr[numStr.length - 1] == 7 ||
+//   numStr[numStr.length - 1] == 9) {
+//   console.log('нечетные числа');
+// } else {
+//   console.log('четные числа');
+// }
+
+
+
+// let num = 2;
+// switch (num) {
+//   case 1:
+//     console.log('нечетные числа');
+//     break;
+//   case 2:
+//     console.log('четные числа');
+//     break;
+//   case 3:
+//     console.log('нечетные числа');
+//     break;
+//   case 4:
+//     console.log('четные числа');
+//     break;
+//   case 5:
+//     console.log('нечетные числа');
+//     break;
+//   case 6:
+//     console.log('четные числа');
+//     break;
+//   case 7:
+//     console.log('нечетные числа');
+//     break;
+//   case 8:
+//     console.log('четные числа');
+//     break;
+//   case 9:
+//     console.log('нечетные числа');
+//     break;
+//   default:
+//     console.log('incorrect value');
+//     break;
+// }
+
+
+
+//* Проверка остатка от деления
+
+// let a = 10;
+// let b = 3;
+// console.log(a % b); // выведет 1
+
+
+
+// let a = 10;
+// let b = 5;
+// console.log(a % b); // выведет 0
+
+
+
+// let a = 10;
+// let b = 3;
+
+// if (a % b === 0) {
+//   console.log('делится нацело');
+// } else {
+//   console.log('делится с остатком'); // work
+// }
+
+
+
+// let a = 10;
+// let b = 3;
+// let rest = a % b;
+
+// if (rest === 0) {
+//   console.log('делится нацело');
+// } else {
+//   console.log('делится с остатком ' + rest);
+// }
+
+
+// let num1 = 10;
+// let num2 = 3;
+// if (num1 % num2 == 0) {
+//   console.log('четное число');
+// } else {
+//   console.log('нечетное'); //work
+// }
+
+
+
+// let num = 6;
+// let num1 = 3;
+// if (num % num1 == 0) {
+//   console.log('детится на 3'); // work
+// } else {
+//   console.log('не делится на 3');
+// }
+
+
+///////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+
+// let num1 = 1;
+// let num2 = 2;
+
+// if (num1 + num2 == 3) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = '123';
+
+// if (Number(num[0]) === 1) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = '123';
+
+// if (String(num)[0] == 1) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = 123;
+// let first = String(num);
+
+// if (first[0] == 1) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = 12;
+// let num1 = String(num);
+// if (num1.length == 2) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = 12;
+// let str = String(num);
+
+// if (str.length == 2) {
+//   console.log('+++'); // work
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = 12;
+// let num1 = String(num);
+
+// if (num1.length == 2) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = 12;
+// let num1 = String(num);
+
+// if (num1.length == 2) {
+//   console.log('+++');
+// } else {
+//   console.log('---');
+// }
+
+
+
+// let num = '123033'; // берем в кавычки, чтобы обращатьсяк цифрам
+
+// let sum1 = Number(num[0]) + Number(num[1]) + Number(num[2]);
+// let sum2 = Number(num[3]) + Number(num[4]) + Number(num[5]);
+
+// if (sum1 == sum2) {
+//   console.log('суммы равны');
+// } else {
+//   console.log('суммы не равны')
+// } Number();
+
+//////////////////////////
+//////////////////////////
+//////////////////////////
+
+
+// let month = 11;
+// if (month <= 2 || month == 12) {
+//   console.log('zima');
+// } else if (month >= 3 && month <= 5) {
+//   console.log('vesna');
+// } else if (month >= 6 && month <= 8) {
+//   console.log('leto');
+// } else if (month >= 9 && month <= 11) {
+//   console.log('osen`');
+// }
+
+
+// let month = 3;
+// if (month == 12 || month == 1 || month == 2) {
+//   console.log("зима");
+// }
+// else if (month == 3 || month == 4 || month == 5) {
+//   console.log("весна");
+// }
+// else if (month == 6 || month == 7 || month == 8) {
+//   console.log("лето");
+// }
+// else {
+//   console.log("осень");
+// }
+
+
+
+
+// let str = 'abcde';
+// if (str[0] == 'a') {
+//   console.log('da');
+// } else {
+//   console.log('net');
+// }
+
+
+
+
+// let num = 12345;
+// let num1 = String(num)
+
+// if (num1[0] == 1 || num1[0] == 2 || num1[0] == 3) {
+//   console.log('da');
+// } else {
+//   console.log('net');
+// }
+
+
+
+
+// let num = 123;
+// let num1 = String(num)
+// let res = Number(num1[0]) + Number(num1[1]) + Number(num1[2])
+// console.log(res);
+
+
+
+
+// let num = 123546;
+// let num1 = String(num);
+// let sum1 = Number(num1[0]) + Number(num1[1]) + Number(num1[2]);
+// let sum2 = Number(num1[3]) + Number(num1[4]) + Number(num1[5]);
+// if (sum1 == sum2) {
+//   console.log('perfecto');
+// } else {
+//   console.log('baranka');
+// }
