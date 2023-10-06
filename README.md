@@ -11,4 +11,4 @@ Little by little I will add my old work. Or already write new ones .. most likel
 - [ ] Pick a Licence
 - [X] Update the README
 - [X] Accept a pull request
-- [ ] Write lots of code!!
+- [+ -] Write lots of code!!
