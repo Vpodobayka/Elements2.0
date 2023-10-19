@@ -1,31 +1,25 @@
-html,
-body {
-  height: 100vh;
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  background-color: var(--bG-color);
-  color: var(--light-color);
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  font-size: var(--big-font-size);
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .main {
-  flex-grow: 1;
-}
-
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-a {
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--link-color);
+  overflow: hidden;
+  /* For animation ScrollReveal */
 }

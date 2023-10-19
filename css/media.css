@@ -1,50 +1,85 @@
-@media (max-width: 794px) {
-  .header .header__inner {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .menu__btn {
-    display: flex;
-  }
-  .menu__list {
-    position: absolute;
-    z-index: 5;
-    background-color: #151515;
-    flex-direction: column;
-    align-items: center;
-    border-radius: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 300px;
-    transform: translateY(-130%);
-    transition: transform 0.3s ease-out;
-  }
-
-  .menu__list.menu__list--active {
-    transform: translateY(0%);
-    margin-top: 70px;
-  }
-
-  .sun__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-    text-align: center;
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1152px) {
+  :root {
+    --bigger-font-size: 4rem;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-big-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
   }
 }
 
-@media (max-width: 600px) {
-  .sun .sun__title {
-    margin-bottom: 50px;
+
+@media screen and (min-width: 340px) {
+  .container {
+    margin-inline: 1rem;
   }
-  .sun .sun__list {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 50px;
-    text-align: center;
-    max-width: 266px;
-    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    background-color: var(--body-color);
+    width: 100%;
+    padding-block: 4rem;
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
+    transition: top .4s;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    column-gap: 4rem;
+  }
+
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+
+  .dark-theme .nav__menu {
+    box-shadow: none;
+
+  }
+
+  .change-theme {
+    color: var(--text-color);
+  }
+
+  .bg-header .change-theme {
+    color: var(--text-color);
+  }
+
+}
+
+
+@media screen and (min-width: 1152px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: 7rem 2rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
   }
 }

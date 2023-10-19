@@ -1,11 +1,11 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 ul,
@@ -25,6 +25,14 @@ ul {
 
 ul li [class] {
   list-style: none;
+}
+
+[class^="ri-"],
+[class*=" ri-"] {
+  font-family: 'remixicon' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  /* Для Webkit (Safari, Chrome) */
 }
 
 body,
