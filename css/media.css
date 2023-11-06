@@ -1,5 +1,5 @@
 /*========== Responsive typography ==========*/
-@media screen and (min-width: 1152px) {
+/* @media screen and (min-width: 1152px) {
   :root {
     --bigger-font-size: 4rem;
     --big-font-size: 3.5rem;
@@ -11,15 +11,13 @@
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
   }
-}
-
+} */
 
 @media screen and (min-width: 340px) {
   .container {
     margin-inline: 1rem;
   }
 }
-
 
 @media screen and (max-width: 1023px) {
   .nav__menu {
@@ -29,11 +27,10 @@
     background-color: var(--body-color);
     width: 100%;
     padding-block: 4rem;
-    box-shadow: 0 2px 16px hsla(0, 0%, 0%, .1);
-    transition: top .4s;
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.1);
+    transition: top 0.4s;
   }
 }
-
 
 @media screen and (min-width: 1024px) {
   .nav {
@@ -56,7 +53,6 @@
 
   .dark-theme .nav__menu {
     box-shadow: none;
-
   }
 
   .change-theme {
@@ -66,9 +62,7 @@
   .bg-header .change-theme {
     color: var(--text-color);
   }
-
 }
-
 
 @media screen and (min-width: 1152px) {
   .container {
