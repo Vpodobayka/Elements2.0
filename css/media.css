@@ -33,22 +33,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .nav {
-    column-gap: 4rem;
-  }
-
-  .nav__close,
-  .nav__toggle {
+  .nav__buttons .nav__toggle {
     display: none;
   }
-
-  .nav__list {
-    flex-direction: row;
-    column-gap: 4rem;
-  }
-
-  .nav__menu {
-    margin-left: auto;
+  .nav__menu .nav__close {
+    display: none;
   }
 
   .dark-theme .nav__menu {
@@ -64,7 +53,7 @@
   }
 }
 
-@media screen and (min-width: 1152px) {
+/* @media screen and (min-width: 1152px) {
   .container {
     margin-inline: auto;
   }
@@ -76,4 +65,4 @@
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
-}
+} */

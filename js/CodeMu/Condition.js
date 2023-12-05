@@ -10,14 +10,12 @@
 // 	*/
 // }
 
-
 // let test = 1;
 // if (test > 0) {
 //   console.log('+++'); // сработает это
 // } else {
 //   console.log('---');
 // }
-
 
 // let test = -1;
 // if (test > 0) {
@@ -26,15 +24,12 @@
 //   console.log('---'); // сработает это
 // }
 
-
 // let test = 0;
 // if (test > 0) {
 // 	console.log('+++');
 // } else {
 // 	console.log('---'); // сработает это
 // }
-
-
 
 // let test = 0;
 
@@ -44,7 +39,6 @@
 // 	console.log('---');
 // }
 
-
 // let test = 0;
 
 // if (test < 0) {
@@ -52,7 +46,6 @@
 // } else {
 // 	console.log('---'); // сработает это
 // }
-
 
 // let test = 0;
 
@@ -62,11 +55,9 @@
 // 	console.log('---');
 // }
 
-
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
-
 
 // let test = 20;
 // if (test > 10) {
@@ -75,14 +66,12 @@
 //   console.log('min');
 // }
 
-
 // let test = 9;
 // if (test > 9) {
 //   console.log('more');
 // } else {
 //   console.log('min'); // work
 // }
-
 
 // let test = 10;
 // if (test >= 10) {
@@ -91,7 +80,6 @@
 //   console.log('min');
 // }
 
-
 // let test = 10;
 // if (test <= 10) {
 //   console.log('more');
@@ -99,10 +87,7 @@
 //   console.log('min');
 // }
 
-
-
 //* Проверка на равенство
-
 
 // let test = 0;
 
@@ -112,8 +97,6 @@
 // 	console.log('---');
 // }
 
-
-
 // let test = 1;
 
 // if (test == 0) {
@@ -122,8 +105,6 @@
 // 	console.log('---'); // сработает это
 // }
 
-
-
 // let test = 10;
 // if (test == 10) {
 //   console.log('eq');
@@ -131,9 +112,7 @@
 //   console.log('not eq');
 // }
 
-
 // Проверка на неравенство
-
 
 // let test = 1;
 // if (test != 0) {
@@ -142,8 +121,6 @@
 //   console.log('---');
 // }
 
-
-
 // let test = 0;
 // if (test != 0) {
 //   console.log('+++');
@@ -151,16 +128,12 @@
 //   console.log('---'); /// work
 // }
 
-
-
 // let test = 9;
 // if (test != 10) {
 //   console.log('+++'); // work
 // } else {
 //   console.log('----');
 // }
-
-
 
 //* Сравнение переменных
 
@@ -172,8 +145,6 @@
 //   console.log('---');
 // }
 
-
-
 // test1 = 15;
 // test2 = 20;
 // if (test1 > test2) {
@@ -181,8 +152,6 @@
 // } else {
 //   console.log('----');// work
 // }
-
-
 
 // let test1=10;
 // let test2= 20;
@@ -192,10 +161,7 @@
 //   console.log('----');// work
 // }
 
-
-
 //  Равенство строк
-
 
 // test = 'abc';
 // if (test == 'abc') {
@@ -203,7 +169,6 @@
 // } else {
 //   console.log('---');
 // }
-
 
 // let test1 = 'abc';
 // let test2 = 'zxc';
@@ -213,8 +178,6 @@
 //   console.log('----'); // work
 // }
 
-
-
 //* Равенство строк и чисел
 
 // if ('3' == 3) {
@@ -222,8 +185,6 @@
 // } else {
 //   console.log('----');
 // }
-
-
 
 // let test1 = '123';
 // let test2 = 123;
@@ -233,8 +194,6 @@
 //   console.log('----');
 // }
 
-
-
 //* Равенство по значению и типу
 //* Для этого вместо оператора == следует использовать оператор ===. В следующем примере при сравнении строки '3' и числа 3 условие будет ложным, так как переменные, хотя и равны по значению, но не равны по типу:
 // if ('3' === 3) {
@@ -243,7 +202,6 @@
 // 	console.log('---'); // сработает это
 // }
 
-
 // let test1 = '3';
 // let test2 = '3';
 
@@ -252,8 +210,6 @@
 // } else {
 // 	console.log('---');
 // }
-
-
 
 // let test1 = '3';
 // let test2 = '3';
@@ -264,8 +220,6 @@
 // 	console.log('---');
 // }
 
-
-
 // let test1 = 3;
 // let test2 = '3';
 
@@ -274,8 +228,6 @@
 // } else {
 // 	console.log('---');
 // }
-
-
 
 // let test1 = 3;
 // let test2 = '3';
@@ -285,14 +237,11 @@
 // } else {
 // 	console.log('---'); // work
 // }
-
-
 
 //* Неравенство по значению и типу
 
 //*кроме оператора != существует также оператор !==, учитывающий тип при сравнении.
 
-
 // let test1 = '3';
 // let test2 = '3';
 
@@ -301,8 +250,6 @@
 // } else {
 // 	console.log('---'); // work
 // }
-
-
 
 // let test1 = '3';
 // let test2 = '3';
@@ -313,8 +260,6 @@
 // 	console.log('---'); // work
 // }
 
-
-
 // let test1 = 3;
 // let test2 = '3';
 
@@ -323,8 +268,6 @@
 // } else {
 // 	console.log('---'); // work
 // }
-
-
 
 // let test1 = 3;
 // let test2 = '3';
@@ -333,8 +276,6 @@
 // } else {
 // 	console.log('---');
 // }
-
-
 
 // let test1 = 3;
 // let test2 = 2;
@@ -343,8 +284,6 @@
 // } else {
 // 	console.log('---');
 // }
-
-
 
 //* Логическое И
 //* Можно группировать операции сравнения с помощью оператора &&, представляющего собой логическое И. В следующем примере, если переменная num больше нуля и одновременно меньше 10, только тогда выведется '+++':
@@ -356,8 +295,6 @@
 //   console.log('-');
 // }
 
-
-
 // let num1 = 2;
 // let num2 = 3;
 // if (num1 == 2 && num2 == 3) {
@@ -366,8 +303,6 @@
 //   console.log('-');
 // }
 
-
-
 // let num = 3;
 // if (num > 0 && num <5) {
 //   console.log('+'); // work
@@ -375,16 +310,12 @@
 //   console.log('-');
 // }
 
-
-
 // let num = 10;
 // if (num >= 10 && num <= 20) {
 //   console.log('+'); // work
 // } else {
 //   console.log('-');
 // }
-
-
 
 // let num1 = 1;
 // let num2 = 3;
@@ -394,12 +325,9 @@
 //   console.log('-');
 // }
 
-
-
 //* Логическое ИЛИ
 //*Оператор || представляет собой логическое ИЛИ и требует выполнения хотя бы одного условия.
 //*В следующем примере, если переменная num1 больше 0 или переменная num2 больше 0, то условие будет истинно (достаточно выполнения хотя бы одного из условий):
-
 
 // let num1 = 10;
 // let num2 = -5;
@@ -409,8 +337,6 @@
 //   console.log('-');
 // }
 
-
-
 // let num1 = -10;
 // let num2 = -10;
 // if (num1 >= 0 || num2 >= 0) {
@@ -418,8 +344,6 @@
 // } else {
 //   console.log('-'); // work
 // }
-
-
 
 // let num1 = 0;
 // let num2 = 0;
@@ -429,8 +353,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num1 = 0;
 // let num2 = 5;
 // if (num1 >= 0 || num2 >= 0) {
@@ -438,8 +360,6 @@
 // } else {
 // 	console.log('---');
 // }
-
-
 
 // let num1 = 5;
 // let num2 = 5;
@@ -449,8 +369,6 @@
 // 	console.log('---');
 // }
 
-
-
 // let num1 = -5;
 // let num2 = 15;
 // if (num1 >= 0 || num2 >= 0) {
@@ -459,16 +377,12 @@
 // 	console.log('---');
 // }
 
-
-
 // let num = 1;
 // if (num == 0 || num == 1) {
 // 	console.log('+++'); // work
 // } else {
 // 	console.log('---');
 // }
-
-
 
 // let num = 2;
 // if (num == 0 || num == 1) {
@@ -477,15 +391,12 @@
 // 	console.log('---'); // work
 // }
 
-
-
 // let num = 2;
 // if (num == 0 || num == 1 || num == 2) {
 // 	console.log('+++'); // work
 // } else {
 // 	console.log('---');
 // }
-
 
 //* Приоритет логических операторов
 //*Операция && имеет приоритет над ||.
@@ -497,8 +408,6 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let num = 3;
 // if (num == 0 || num > 1 && num < 5) {
 //   console.log('+++');
@@ -506,10 +415,7 @@
 //   console.log('---');
 // }
 
-
-
 //* Группировка условий
-
 
 // let num = 3;
 // if ((num > 0 && num < 5) || (num > 10 && num < 20)) {
@@ -517,8 +423,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let num1 = 3;
 // let num2 = 5;
@@ -529,16 +433,12 @@
 //   console.log('---');
 // }
 
-
-
 // let num = 3;
 // if (num > 5 && num < 10 || num == 20) {
 //   console.log('+++');
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let num = 3;
 // if (num > 5 || num > 0 && num < 3) {
@@ -547,8 +447,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num = 3;
 // if (num == 9 || num > 10 && num < 20 || num > 20 && num
 //   < 30) {
@@ -556,8 +454,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 //* Инвертирование логических выражений
 
@@ -568,8 +464,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num1 = 3;
 // let num2 = 7;
 // if (!(num1 >= 0 || num2 <= 10)) {
@@ -577,7 +471,6 @@
 // } else {
 //   console.log('---');
 // }
-
 
 //* Условия с булевыми значениями
 
@@ -588,8 +481,6 @@
 //   console.log('---');
 // }
 
-
-
 // let test = false;
 // if (test === false) {
 //   console.log('+++'); // work
@@ -597,9 +488,7 @@
 //   console.log('---');
 // }
 
-
 //* Сравнение значений с булевым типом
-
 
 // let test = 1;
 
@@ -608,8 +497,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let test = 0;
 
@@ -619,8 +506,6 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = 1;
 
 // if (test == false) {
@@ -628,8 +513,6 @@
 // } else {
 //   console.log('---'); // work
 // }
-
-
 
 // let test = 1;
 
@@ -639,8 +522,6 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = '';
 
 // if (test == false) {
@@ -648,8 +529,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let test;
 
@@ -659,8 +538,6 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = 3 * 'a';
 
 // if (test == true) {
@@ -669,10 +546,8 @@
 //   console.log('---'); // work
 // }
 
-
 //* Сокращенная форма проверки на истину
 // существует более изящная сокращенная форма: вместо if (test == true) можно написать просто if (test).
-
 
 // let test = true;
 // if (test) {
@@ -680,8 +555,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // Сокращенная форма проверки на ложь
 
@@ -693,16 +566,12 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = true;
 // if (test != false) {
 //   console.log('+++'); // work
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let test = true;
 // if (!test) {
@@ -711,15 +580,12 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = true;
 // if (test) {
 //   console.log('+++'); // work
 // } else {
 //   console.log('---');
 // }
-
 
 //* Общая сокращенная форма проверки
 
@@ -730,8 +596,6 @@
 //   console.log('---');
 // }
 
-
-
 // let test = 'abc';
 // if (test) {
 //   console.log('+++'); // work
@@ -739,8 +603,6 @@
 //   console.log('---');
 // }
 
-
-
 // let test = '';
 // if (test) {
 //   console.log('+++');
@@ -748,16 +610,12 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = '';
 // if (test) {
 //   console.log('+++');
 // } else {
 //   console.log('---'); // work
 // }
-
-
 
 // let test = null;
 // if (test) {
@@ -766,16 +624,12 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = false;
 // if (test) {
 //   console.log('+++');
 // } else {
 //   console.log('---'); // work
 // }
-
-
 
 // let test;
 // if (test) {
@@ -784,16 +638,12 @@
 //   console.log('---'); // work
 // }
 
-
-
 // let test = 0;
 // if (test) {
 //   console.log('+++');
 // } else {
 //   console.log('---'); // work
 // }
-
-
 
 // let test = '0';
 // if (test) {
@@ -802,15 +652,12 @@
 //   console.log('---');
 // }
 
-
-
 // let test = -1;
 // if (test) {
 //   console.log('+++'); // work
 // } else {
 //   console.log('---');
 // }
-
 
 //*Сложные условия в сокращенной форме
 
@@ -823,8 +670,6 @@
 //   console.log('---');
 // }
 
-
-
 // let test1 = true;
 // let test2 = true;
 // if (test1 != test2) {
@@ -833,8 +678,6 @@
 //   console.log('---');
 // }
 
-
-
 // let test1 = true;
 // let test2 = true;
 // if (test1 == test2) {
@@ -842,8 +685,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let test1 = true;
 // let test2 = true;
@@ -854,8 +695,6 @@
 //   console.log('---');
 // }
 
-
-
 // let test1 = true;
 // let test2 = true;
 // let test3 = true;
@@ -864,8 +703,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let test1 = true;
 // let test2 = true;
@@ -876,16 +713,12 @@
 //   console.log('---');
 // }
 
-
-
 //* Необязательность конструкции else
 
 // let test = 10;
 // if (test == 10) {
 //   console.log('+++'); // work
 // }
-
-
 
 //* Необязательность фигурных скобок
 
@@ -895,27 +728,23 @@
 // else
 //   console.log('---');
 
-
 // let test = 1;
 // if (test > 0)
 //   console.log('+++');
-
-
 
 //*Конструкция else if
 
 // let day = 32;
 
 // if (day >= 1 && day < 10) {
-//   console.log('1 dekado');
+//   console.log("1 dekada");
 // } else if (day >= 10 && day < 20) {
-//   console.log(' 2 dekado');
+//   console.log(" 2 dekada");
 // } else if (day >= 20 && day <= 31) {
-//   console.log('3 dekado');
+//   console.log("3 dekada");
 // } else {
-//   console.log('dekado is not defined!');
+//   console.log("dekada is not defined!");
 // }
-
 
 //* Вложенные конструкции
 
@@ -929,7 +758,6 @@
 // } else {
 //   console.log('меньше нуля');
 // }
-
 
 // let num = 33;
 // if (num <= 9) {
@@ -954,7 +782,6 @@
 //   console.log(num);
 // }
 
-
 //* Конструкция switch-case
 
 // let num = 1;
@@ -973,9 +800,6 @@
 //     break;
 // }
 
-
-
-
 // let lang = 'ua'
 // switch (lang) {
 //   case 'ua':
@@ -991,9 +815,6 @@
 //     console.log('язык не поддерживается');
 //     break;
 // }
-
-
-
 
 //* Необязательность break в конструкции switch-case
 
@@ -1012,12 +833,9 @@
 
 // console.log(res); // a
 
-
-
 //* Тернарный оператор
 // В данном уроке мы рассмотрим специальный тернарный оператор, представляющий собой сокращенный вариант конструкции if-else. Его синтаксис выглядит следующим образом:
 // let переменная = условие ? значение1 : значение2;
-
 
 // обычный вариант
 // let age = 17;
@@ -1035,11 +853,7 @@
 // let adult = age >= 18 ? true : false;
 // console.log(adult); // true
 
-
-
 // Тернарный оператор следует использовать только в самых простых случаях, так как его использование затрудняет понимание кода.
-
-
 
 // let num = 1;
 // let res;
@@ -1051,13 +865,9 @@
 // }
 // console.log(res); // true // 1 //
 
-
-
 // let age = 1;
 // let adult = age >= 3 ? true : false;
 // console.log(adult); // false // тюк больше 3х
-
-
 
 //* Логические операции
 
@@ -1065,8 +875,6 @@
 // let b = 2;
 // let result = a == b;
 // console.log(result);
-
-
 
 //* Функция confirm
 
@@ -1084,7 +892,6 @@
 //   console.log('not 18');
 // }
 
-
 //* Область видимости переменных в if-else
 
 // if (true) {
@@ -1092,15 +899,11 @@
 // }
 // console.log(res);
 
-
-
 // let res;
 // if (true) {
 //   res = '!';
 // }
 // console.log(res);
-
-
 
 // let age = 17;
 // let adult;
@@ -1112,10 +915,7 @@
 // }
 // console.log(adult);
 
-
-
 //* Нюансы области видимости переменных в конструкциях if-else
-
 
 // let res = 1;
 
@@ -1125,8 +925,6 @@
 // }
 
 // console.log(res); // выведет 1
-
-
 
 // let age = 22;
 // let res;
@@ -1143,9 +941,6 @@
 
 // console.log(res)
 
-
-
-
 // let age = 24;
 // let res;
 
@@ -1161,8 +956,6 @@
 // }
 
 // console.log(res);
-
-
 
 //* Проверка частей часа через if-else
 
@@ -1182,8 +975,6 @@
 //   console.log('4 четверть');
 // }
 
-
-
 //	в какую треть часа попадает указанное количество минут.
 // let min = 38;
 
@@ -1197,9 +988,6 @@
 //   console.log('3я треть');
 // }
 
-
-
-
 //* Проверка длины строк и массивов
 
 // let str = '12345';
@@ -1207,9 +995,6 @@
 // if (str.length >= 3) {
 //   console.log('!');
 // }
-
-
-
 
 // let arr = [1, 2, 3];
 // if (arr.length > 3) {
@@ -1221,11 +1006,7 @@
 //   console.log(arrRes);
 // }
 
-
-
-
 //* Проверка символов строки
-
 
 // let str = '12345';
 // let last = str[str.length - 1];
@@ -1234,21 +1015,15 @@
 //   console.log('!');
 // }
 
-
-
 // let str = "abc"
 // if (str[0] == 'a') {
 //   console.log('a');
 // }
 
-
-
 // let str = 'azx';
 // if (str[str.length - 1]) {
 //   console.log('x');
 // }
-
-
 
 // let str = 'bac';
 // if (str[0] == 'a') {
@@ -1256,7 +1031,6 @@
 // } else if (str[0] == 'b') {
 //   console.log('b');
 // }
-
 
 //* Проверка цифр числа
 
@@ -1267,8 +1041,6 @@
 // } else {
 //   console.log('---'); // сработает это
 // }
-
-
 
 // Как вы уже должны знать, проблема в том, что можно обращаться к символам строки, но нельзя - к цифрам числа:
 // Для решения проблемы преобразуем наше число в строку:
@@ -1281,8 +1053,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // Пусть теперь мы хотим проверить первую цифру на то, что она равна 1, либо 2. Напишем соответствующий код:
 
@@ -1305,15 +1075,11 @@
 //   console.log('---');
 // }
 
-
-
 // let num = 220;
 // let lastNum = String(num);
 // if (lastNum[lastNum.length - 1] == 0) {
 //   console.log('last 0');
 // }
-
-
 
 // let num = 12345678;
 // let numStr = String(num);
@@ -1327,8 +1093,6 @@
 // } else {
 //   console.log('четные числа');
 // }
-
-
 
 // let num = 2;
 // switch (num) {
@@ -1364,21 +1128,15 @@
 //     break;
 // }
 
-
-
 //* Проверка остатка от деления
 
 // let a = 10;
 // let b = 3;
 // console.log(a % b); // выведет 1
 
-
-
 // let a = 10;
 // let b = 5;
 // console.log(a % b); // выведет 0
-
-
 
 // let a = 10;
 // let b = 3;
@@ -1388,8 +1146,6 @@
 // } else {
 //   console.log('делится с остатком'); // work
 // }
-
-
 
 // let a = 10;
 // let b = 3;
@@ -1401,7 +1157,6 @@
 //   console.log('делится с остатком ' + rest);
 // }
 
-
 // let num1 = 10;
 // let num2 = 3;
 // if (num1 % num2 == 0) {
@@ -1410,8 +1165,6 @@
 //   console.log('нечетное'); //work
 // }
 
-
-
 // let num = 6;
 // let num1 = 3;
 // if (num % num1 == 0) {
@@ -1419,7 +1172,6 @@
 // } else {
 //   console.log('не делится на 3');
 // }
-
 
 ///////////////////////////////////
 ///////////////////////////////////
@@ -1434,8 +1186,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num = '123';
 
 // if (Number(num[0]) === 1) {
@@ -1444,8 +1194,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num = '123';
 
 // if (String(num)[0] == 1) {
@@ -1453,8 +1201,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let num = 123;
 // let first = String(num);
@@ -1465,8 +1211,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num = 12;
 // let num1 = String(num);
 // if (num1.length == 2) {
@@ -1474,8 +1218,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let num = 12;
 // let str = String(num);
@@ -1486,8 +1228,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num = 12;
 // let num1 = String(num);
 
@@ -1497,8 +1237,6 @@
 //   console.log('---');
 // }
 
-
-
 // let num = 12;
 // let num1 = String(num);
 
@@ -1507,8 +1245,6 @@
 // } else {
 //   console.log('---');
 // }
-
-
 
 // let num = '123033'; // берем в кавычки, чтобы обращатьсяк цифрам
 
@@ -1525,7 +1261,6 @@
 //////////////////////////
 //////////////////////////
 
-
 // let month = 11;
 // if (month <= 2 || month == 12) {
 //   console.log('zima');
@@ -1537,6 +1272,7 @@
 //   console.log('osen`');
 // }
 
+// - - - - - - - ----
 
 // let month = 3;
 // if (month == 12 || month == 1 || month == 2) {
@@ -1552,18 +1288,12 @@
 //   console.log("осень");
 // }
 
-
-
-
 // let str = 'abcde';
 // if (str[0] == 'a') {
 //   console.log('da');
 // } else {
 //   console.log('net');
 // }
-
-
-
 
 // let num = 12345;
 // let num1 = String(num)
@@ -1574,16 +1304,10 @@
 //   console.log('net');
 // }
 
-
-
-
 // let num = 123;
 // let num1 = String(num)
 // let res = Number(num1[0]) + Number(num1[1]) + Number(num1[2])
 // console.log(res);
-
-
-
 
 // let num = 123546;
 // let num1 = String(num);
