@@ -1,6 +1,5 @@
 @import url("global.css");
 @import url("vars.css");
-@import url("media.css");
 
 /*=============== BASE ===============*/
 
@@ -33,20 +32,6 @@ h4 {
   font-weight: var(--font-semi-bold);
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*=============== THEME ===============*/
 .nav__buttons {
   display: flex;
   align-items: center;
@@ -69,8 +54,8 @@ body.dark-theme {
 }
 
 /*========== 
-	Color changes in some parts of 
-	the website, in dark theme
+Color changes in some parts of 
+the website, in dark theme
 ==========*/
 .dark-theme :is(.bg-header, .nav__menu) {
   box-shadow: 0 2px 8px hsla(0, 0%, 100%, 0.315);
@@ -88,8 +73,8 @@ body.dark-theme {
 }
 
 .nav {
-  height: var(--header-height);
   display: flex;
+  height: var(--header-height);
   justify-content: space-between;
   align-items: center;
 }
@@ -119,6 +104,7 @@ body.dark-theme {
   color: var(--white-color);
   transition: color 0.4s;
 }
+
 
 .nav__list {
   display: flex;
@@ -180,3 +166,10 @@ body.dark-theme {
   align-items: center;
   column-gap: 0.25rem;
 }
+
+
+
+
+
+
+@import url("media.css");

@@ -29,7 +29,7 @@ ul li [class] {
 
 [class^="ri-"],
 [class*=" ri-"] {
-  font-family: 'remixicon' !important;
+  font-family: "remixicon" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   /* Для Webkit (Safari, Chrome) */
